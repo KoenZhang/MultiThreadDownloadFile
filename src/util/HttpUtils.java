@@ -33,7 +33,7 @@ public class HttpUtils {
      * @return
      */
     public static String getHttpFileName (String url) {
-        int index = url.lastIndexOf(RequestConstant.LEFT_SLASH);
+        int index = url.lastIndexOf(RequestConstant.SLASH);
         return url.substring(index + 1);
     }
 }

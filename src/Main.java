@@ -1,3 +1,5 @@
+import core.Downloader;
+
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +19,7 @@ public class Main {
             url = args[0];
         }
 
-        System.out.println(url);
+        Downloader downloader = new Downloader();
+        downloader.download(url);
     }
 }
